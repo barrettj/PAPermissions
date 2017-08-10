@@ -81,7 +81,14 @@ public class PAPermissionsItem {
 		}
 
 		if key.isEmpty { return "" }
-		return NSLocalizedString(key, tableName: "InfoPlist", bundle: Bundle.main, value: "", comment: "")
+        
+        let localized = NSLocalizedString(key, tableName: "InfoPlist", bundle: Bundle.main, value: "", comment: "")
+        
+        if localized == key, let nonLocalizedValue = Bundle.main.infoDictionary?[key] as? String {
+            return nonLocalizedValue
+        }
+        
+		return localized
 	}
 	
 
