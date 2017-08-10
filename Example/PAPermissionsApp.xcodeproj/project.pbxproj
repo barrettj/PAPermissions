@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031AA100442EFE1A520127AA /* Pods_PAPermissionsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F229B11C0AFB1B19A3DCD30C /* Pods_PAPermissionsApp.framework */; };
 		40B2C1EB1D88851800731B20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40B2C1EA1D88851800731B20 /* InfoPlist.strings */; };
 		50E9DCD31D7DC370007D0ED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E9DCD21D7DC370007D0ED5 /* AppDelegate.swift */; };
 		50E9DCD51D7DC370007D0ED5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E9DCD41D7DC370007D0ED5 /* ViewController.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		040C377E524609F84EFD5672 /* Pods-PAPermissionsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAPermissionsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PAPermissionsApp/Pods-PAPermissionsApp.release.xcconfig"; sourceTree = "<group>"; };
 		40B2C1EA1D88851800731B20 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		50E9DCCF1D7DC370007D0ED5 /* PAPermissionsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAPermissionsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E9DCD21D7DC370007D0ED5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,8 @@
 		E642C35B1DA1798500BC9133 /* PAPermissionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAPermissionsView.swift; sourceTree = "<group>"; };
 		E642C35C1DA1798500BC9133 /* PAPermissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAPermissionsViewController.swift; sourceTree = "<group>"; };
 		E642C35E1DA1798500BC9133 /* PAConstraintsUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAConstraintsUtils.swift; sourceTree = "<group>"; };
+		EE74CDB6484CFD0CA9CD4A80 /* Pods-PAPermissionsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PAPermissionsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PAPermissionsApp/Pods-PAPermissionsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F229B11C0AFB1B19A3DCD30C /* Pods_PAPermissionsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PAPermissionsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 				50E9DD2C1D7E44BD007D0ED5 /* AVFoundation.framework in Frameworks */,
 				50E9DD281D7E41E9007D0ED5 /* CoreLocation.framework in Frameworks */,
 				50E9DD191D7E37FC007D0ED5 /* CoreBluetooth.framework in Frameworks */,
+				031AA100442EFE1A520127AA /* Pods_PAPermissionsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +129,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C87B5FC719241C7FAA15EE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F229B11C0AFB1B19A3DCD30C /* Pods_PAPermissionsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50E9DCC61D7DC370007D0ED5 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +146,8 @@
 				50E9DCD11D7DC370007D0ED5 /* PAPermissionsApp */,
 				E642C33E1DA1796900BC9133 /* PAPermissions */,
 				50E9DCD01D7DC370007D0ED5 /* Products */,
+				E5BA30A565E520DD8844E31A /* Pods */,
+				3C87B5FC719241C7FAA15EE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +175,15 @@
 				50E9DD8E1D80925F007D0ED5 /* background.jpg */,
 			);
 			path = PAPermissionsApp;
+			sourceTree = "<group>";
+		};
+		E5BA30A565E520DD8844E31A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE74CDB6484CFD0CA9CD4A80 /* Pods-PAPermissionsApp.debug.xcconfig */,
+				040C377E524609F84EFD5672 /* Pods-PAPermissionsApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		E642C33E1DA1796900BC9133 /* PAPermissions */ = {
@@ -240,10 +264,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50E9DCE11D7DC370007D0ED5 /* Build configuration list for PBXNativeTarget "PAPermissionsApp" */;
 			buildPhases = (
+				3B71A7FAD13808C5FA12546D /* [CP] Check Pods Manifest.lock */,
 				50E9DCCB1D7DC370007D0ED5 /* Sources */,
 				50E9DCCC1D7DC370007D0ED5 /* Frameworks */,
 				50E9DCCD1D7DC370007D0ED5 /* Resources */,
 				E642C3491DA1796900BC9133 /* Embed Frameworks */,
+				AEC051EE078D69FB22CAA677 /* [CP] Embed Pods Frameworks */,
+				3E5E49C2FE4A792CF7F496A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,6 +362,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B71A7FAD13808C5FA12546D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PAPermissionsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E5E49C2FE4A792CF7F496A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PAPermissionsApp/Pods-PAPermissionsApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEC051EE078D69FB22CAA677 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PAPermissionsApp/Pods-PAPermissionsApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PAPermissions/PAPermissions.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PAPermissions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PAPermissionsApp/Pods-PAPermissionsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50E9DCCB1D7DC370007D0ED5 /* Sources */ = {
@@ -493,6 +574,7 @@
 		};
 		50E9DCE21D7DC370007D0ED5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE74CDB6484CFD0CA9CD4A80 /* Pods-PAPermissionsApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -509,6 +591,7 @@
 		};
 		50E9DCE31D7DC370007D0ED5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 040C377E524609F84EFD5672 /* Pods-PAPermissionsApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
