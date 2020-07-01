@@ -71,7 +71,7 @@ class PAPermissionsTableViewCell: UITableViewCell {
 		let views = ["iconImageView": self.iconImageView,
 		             "titleLabel": self.titleLabel,
 		             "detailsLabel": self.detailsLabel,
-		             "rightDetailsContainer": self.rightDetailsContainer] as [String:UIView]
+		             "rightDetailsContainer": self.rightDetailsContainer] as! [String:UIView]
 
 		let allConstraints = PAConstraintsUtils.concatenateConstraintsFromString([
 			"V:|-2-[iconImageView]-2-|",
@@ -160,7 +160,7 @@ class PAPermissionsTableViewCell: UITableViewCell {
 			self.checkingIndicator = checkingIndicator
 
 			let views = ["enableButton": self.enableButton,
-						 "checkingIndicator": self.checkingIndicator] as [String : UIView]
+						 "checkingIndicator": self.checkingIndicator] as! [String : UIView]
 			
 			var allConstraints = PAConstraintsUtils.concatenateConstraintsFromString([
 				"V:[enableButton(30)]",

@@ -27,7 +27,11 @@ public class PAUNNotificationPermissionsCheck: PAPermissionsCheck {
 				self.status = .disabled
 			case .notDetermined:
 				self.status = .disabled
-			}
+            case .provisional:
+                self.status = .enabled
+            case .ephemeral:
+                self.status = .disabled
+            }
 
 			self.authorizationStatus = settings.authorizationStatus
 

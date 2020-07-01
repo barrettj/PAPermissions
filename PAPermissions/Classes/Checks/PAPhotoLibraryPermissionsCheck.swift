@@ -49,6 +49,8 @@ public class PAPhotoLibraryPermissionsCheck: PAPermissionsCheck {
 		case .notDetermined:
 			self.status = .disabled
         case .restricted: self.status = .unavailable
+        case .limited:
+            self.status = .unavailable
         }
 		
 		if oldStatus == .denied && self.status == .denied {

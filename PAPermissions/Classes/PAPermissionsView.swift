@@ -242,7 +242,7 @@ class PAPermissionsView: UIView, UITableViewDataSource, UITableViewDelegate {
 		let views = ["titleLabel": self.titleLabel,
 					 "detailsLabel": self.detailsLabel,
 					 "tableView": self.tableView,
-					 "continueButton": self.continueButton] as [String : UIView]
+					 "continueButton": self.continueButton] as! [String : UIView]
 		
 		func horizontalConstraints(_ name: String) -> [NSLayoutConstraint]{
 			return NSLayoutConstraint.constraints(
