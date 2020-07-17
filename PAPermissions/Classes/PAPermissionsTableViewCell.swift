@@ -61,6 +61,7 @@ class PAPermissionsTableViewCell: UITableViewCell {
 	}
 	
 	fileprivate func setupUI() {
+        self.selectionStyle = .none
 		self.backgroundColor = UIColor.clear
 		self.separatorInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
 		self.setupImageView()
@@ -96,7 +97,7 @@ class PAPermissionsTableViewCell: UITableViewCell {
 		if self.iconImageView == nil {
 			let imageView = UIImageView()
 			imageView.contentMode = .scaleAspectFit
-			self.addSubview(imageView)
+            self.contentView.addSubview(imageView)
 			self.iconImageView = imageView
 			self.iconImageView.backgroundColor = UIColor.clear
 			self.iconImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -108,7 +109,7 @@ class PAPermissionsTableViewCell: UITableViewCell {
 		if self.titleLabel == nil {
 			let titleLabel = UILabel()
 			titleLabel.translatesAutoresizingMaskIntoConstraints = false
-			self.addSubview(titleLabel)
+			self.contentView.addSubview(titleLabel)
 			self.titleLabel = titleLabel
 			self.titleLabel.text = "Title"
 			self.titleLabel.adjustsFontSizeToFitWidth = true
@@ -123,7 +124,7 @@ class PAPermissionsTableViewCell: UITableViewCell {
 		if self.detailsLabel == nil {
 			let detailsLabel = UILabel()
 			detailsLabel.translatesAutoresizingMaskIntoConstraints = false
-			self.addSubview(detailsLabel)
+			self.contentView.addSubview(detailsLabel)
 			self.detailsLabel = detailsLabel
 			self.detailsLabel.text = "details"
 			self.detailsLabel.adjustsFontSizeToFitWidth = true
@@ -139,7 +140,7 @@ class PAPermissionsTableViewCell: UITableViewCell {
 			let rightDetailsContainer = UIView()
 			rightDetailsContainer.backgroundColor = UIColor.clear
 			rightDetailsContainer.translatesAutoresizingMaskIntoConstraints = false
-			self.addSubview(rightDetailsContainer)
+			self.contentView.addSubview(rightDetailsContainer)
 			self.rightDetailsContainer = rightDetailsContainer
 			self.rightDetailsContainer.backgroundColor = UIColor.clear
 		}
